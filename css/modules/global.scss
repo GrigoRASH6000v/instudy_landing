@@ -1,0 +1,205 @@
+* {
+  box-sizing: border-box;
+  color: $white;
+  font-family: 'ProximaNova-Regular';
+}
+button {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+.app {
+  position: relative;
+  overflow: hidden;
+  background-color: $black;
+  width: 100%;
+}
+
+.container {
+  max-width: 151.2rem;
+  margin: 0 auto;
+  position: relative;
+  padding: 3.2rem 0;
+}
+
+.heading {
+  font-family: 'Gilroy-Bold';
+  margin: 0;
+  font-size: 6.4rem;
+  font-weight: 700;
+  line-height: 7.9rem;
+  max-width: 63.6rem;
+}
+.sub-heading {
+  display: grid;
+  margin: 0;
+  font-family: 'ProximaNova-Regular';
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  max-width: 63.6rem;
+}
+.text-gradient {
+  font-size: inherit;
+  font-family: inherit;
+  background: linear-gradient(
+    90deg,
+    rgba(50, 29, 170, 1) 0%,
+    rgba(234, 212, 197, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.inverted-commas__wrp {
+  width: 7.4rem;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-70%) translateY(-50%);
+  &::before {
+    content: '';
+    position: absolute;
+    background-color: #6756bf;
+    border-radius: 50%;
+    height: 0.1rem;
+    top: 3.4em;
+    left: 1.9rem;
+    width: 0.1em;
+    box-shadow: 0px 0px 60px 4rem rgb(57, 24, 219);
+  }
+}
+.inverted-commas {
+  width: 100%;
+}
+.justyfy-center {
+  justify-content: center;
+}
+.justyfy-start {
+  justify-self: flex-start;
+}
+.justyfy-end {
+  justify-self: flex-end;
+}
+.text-upercase {
+  text-transform: uppercase;
+}
+.main-block {
+  position: relative;
+}
+.eclipse {
+  position: absolute;
+}
+.block__list {
+  display: grid;
+  .list-item {
+    list-style-type: none;
+    position: relative;
+    font-family: 'ProximaNova-Regular';
+    font-size: 2.4rem;
+    padding-left: 3.5rem;
+    line-height: 2.6rem;
+    list-style-type: none;
+    position: relative;
+    margin: 2px;
+    &::before {
+      content: '';
+      position: absolute;
+      background-color: #6756bf;
+      border-radius: 50%;
+      height: 0.7rem;
+      top: 0.4em;
+      left: 0.6em;
+      width: 0.7rem;
+      box-shadow: 0px 0px 10px 3px rgb(57, 24, 219);
+    }
+  }
+}
+.slick-dots {
+  width: 100%;
+  display: flex !important;
+  justify-content: center;
+  //align-items: center;
+  justify-self: center;
+  padding: 2.3rem;
+  column-gap: 1rem;
+  button {
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0;
+    margin: 0;
+    background-color: rgba($color: $white, $alpha: 0.4);
+    color: transparent;
+  }
+}
+.slick-active {
+  button {
+    background-color: $white;
+  }
+}
+
+@include breakPoints(xs) {
+  * {
+    font-size: 6px;
+  }
+  .main {
+    padding-top: 9rem;
+  }
+  .container {
+    padding: 0;
+  }
+  .footer,
+  .main-block {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+@include breakPoints(sm) {
+  * {
+    font-size: 6px;
+  }
+  .footer,
+  .header,
+  .main-block {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+@include breakPoints(md) {
+  * {
+    font-size: 7px;
+  }
+  .footer,
+  .header,
+  .main-block {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+@include breakPoints(lg) {
+  * {
+    font-size: 8px;
+  }
+  .footer,
+  .header,
+  .main-block {
+    padding-left: 12rem;
+    padding-right: 12rem;
+  }
+}
+@include breakPoints(xl) {
+  * {
+    font-size: 9px;
+  }
+}
+
+@include breakPoints(xxl) {
+  * {
+    font-size: 10px;
+  }
+}

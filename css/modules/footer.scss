@@ -1,0 +1,117 @@
+.footer {
+  display: grid;
+  column-gap: 2.5rem;
+  align-items: flex-start;
+  grid-template-areas:
+    'logo logo logo logo'
+    'title-contacts title-contacts title-contacts title-menu'
+    'col-1 col-2 col-3 col-4';
+  grid-template-columns: 23.5rem 23rem 1fr 23.5rem;
+  &__logo {
+    width: 4.9rem;
+    margin-bottom: 6.5rem;
+    grid-area: logo;
+  }
+  &__col {
+    max-width: 23.5rem;
+    display: grid;
+    row-gap: 1.5rem;
+  }
+  &__col--1 {
+    grid-area: col-1;
+  }
+  &__col--2 {
+    grid-area: col-2;
+  }
+  &__col--3 {
+    grid-area: col-3;
+  }
+  &__col--4 {
+    grid-area: col-4;
+  }
+  &__title {
+    margin: 0;
+    font-size: 1.4rem;
+    font-family: 'Gilroy-Bold';
+    text-transform: uppercase;
+    margin-bottom: 1.6rem;
+  }
+  .footer__title--contacts {
+    grid-area: title-contacts;
+  }
+  .footer__title--menu {
+    grid-area: title-menu;
+  }
+  &__text {
+    margin: 0;
+    font-family: 'ProximaNova-Regular';
+    font-size: 1.4rem;
+    color: $grey;
+    line-height: 1.7rem;
+  }
+  &__text--last {
+    max-width: 14.8rem;
+    text-align: right;
+  }
+  &__text--link {
+    text-decoration: underline;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    color: $white;
+    font-weight: 800;
+    &:hover {
+      color: lighten($color: $base-clr, $amount: 20%);
+    }
+  }
+  &__text--menu-item {
+    cursor: pointer;
+    transition-duration: 0.3s;
+    transition-property: color;
+    text-decoration: none;
+    &:hover {
+      color: $white;
+    }
+  }
+}
+
+@include breakPoints(xs) {
+  .footer {
+    padding-bottom: 10rem;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+    grid-template-areas:
+      'title-contacts title-contacts'
+      'col-1 col-2 '
+      'col-1 . '
+      'col-3 col-3';
+    &__logo {
+      display: none;
+    }
+    &__col {
+      row-gap: 0;
+    }
+    &__title {
+      font-size: 2.4rem;
+      text-transform: uppercase !important;
+      margin-bottom: 0.7rem;
+    }
+    &__text {
+      font-size: 2rem;
+      line-height: 2.5rem;
+    }
+    .footer__title--menu,
+    &__col--4 {
+      display: none;
+    }
+    &__col--3 {
+      padding-top: 2.2rem;
+      max-width: 90%;
+    }
+    &__text--last {
+      max-width: 21.1rem;
+    }
+    .text-upercase {
+      text-transform: none;
+    }
+  }
+}

@@ -1,0 +1,94 @@
+.main-block--effect {
+  padding-bottom: 10.5rem;
+  overflow: hidden;
+  position: relative;
+  .heading {
+    margin-bottom: 3.8rem;
+    line-height: 8.2rem;
+  }
+  .block-effect__sub {
+    font-size: 2.4rem;
+    font-family: 'Gilroy-Bold';
+    margin-bottom: 3.7rem;
+  }
+  .slide-tab {
+    margin: 0 auto;
+    align-items: center;
+    column-gap: 2.2rem;
+    display: flex !important;
+    padding: 2rem 1.6rem;
+    max-width: 37.4rem;
+    height: 12.8rem;
+    background: linear-gradient(
+        91.43deg,
+        #311ca9 2.71%,
+        #7545c9 48.2%,
+        #ab8dac 98.07%
+      ),
+      rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+  }
+  .slide-tab__text {
+    margin: 0;
+    line-height: 2.2rem;
+    font-size: 1.7rem;
+  }
+  .slider-2__wrp {
+    position: relative;
+    height: 19.3rem;
+  }
+  .block-effect__slider-1 {
+    width: 158rem;
+    position: relative;
+    margin-bottom: 6.3rem;
+    left: -12rem;
+  }
+  .block-effect__slider-2 {
+    width: 158rem;
+    position: absolute;
+
+    right: -12rem;
+  }
+}
+@media (max-width: 1000px) {
+  .main-block--effect {
+    .block-effect__slider-1 {
+      left: -5rem;
+    }
+    .block-effect__slider-2 {
+      right: -5rem;
+    }
+  }
+}
+@include breakPoints(xs) {
+  .main-block--effect {
+    padding-bottom: 4.5rem;
+    .heading {
+      line-height: 7.7rem;
+      font-size: 6rem;
+    }
+    .slide-tab {
+      max-width: 47rem;
+      height: 15.8rem;
+      img {
+        width: 9rem;
+      }
+    }
+    .block-effect__slider-1 {
+      width: 200rem;
+      left: -2rem;
+    }
+    .slide-tab__text {
+      font-size: 2.2rem;
+      line-height: 2.7rem;
+    }
+    .block-effect__slider-2 {
+      width: 200rem;
+      right: -2rem;
+    }
+    .block-effect__sub {
+      font-size: 2.8rem;
+      margin-bottom: 2.7rem;
+    }
+  }
+}

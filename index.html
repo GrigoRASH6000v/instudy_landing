@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./images/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>InStudy</title>
+  </head>
+  <body>
+    <div id="app" class="app">
+      <div class="container">
+        <header class="header">
+          <img
+            class="header__logo"
+            src="./images/logo.svg"
+            alt="logo-Instudy"
+          />
+          <nav id="header-navigation" class="header__navigation">
+            <ul class="navigation__list">
+              <li
+                data-block="#block_about"
+                class="list__item list__item--navigation"
+              >
+                О платформе
+              </li>
+              <li
+                data-block="#block_partners"
+                class="list__item list__item--navigation"
+              >
+                Партнеры
+              </li>
+              <li
+                data-block="#block_award-winner"
+                class="list__item list__item--navigation"
+              >
+                Премия
+              </li>
+              <li
+                data-block="#block_effect"
+                class="list__item list__item--navigation"
+              >
+                Эффект
+              </li>
+            </ul>
+          </nav>
+          <button id="burger-btn" class="header__burger-btn">
+            <span class="burger-btn__line"></span>
+          </button>
+        </header>
+        <main class="main">
+          <div class="main-block main-block--info">
+            <img
+              class="eclipse block-info__eclipse-1"
+              src="./images/block_info-eclipse-1.png"
+              alt="block-info-eclipse"
+            />
+            <img
+              class="block-info__img"
+              src="./images/block_info_img.png"
+              alt="block_info_img"
+            />
+            <img
+              class="block-info__img--mobile"
+              src="./images/block_info_img--mobile.png"
+              alt="block_info_img"
+            />
+            <h2 class="heading block-info__title">
+              Образовательная платформа InStudy - новый уровень
+              <span class="text-gradient">цифрового обучения</span>
+            </h2>
+            <button
+              data-block="#block-form"
+              class="button button--demonstration"
+            >
+              Заказать демонстрацию
+              <svg
+                class="arrow-svg"
+                width="32"
+                height="18"
+                viewBox="0 0 32 18"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21.5212 15.5161C20.9611 16.0844 20.9611 17.0056 21.5212 17.5738C22.0812 18.1421 22.9893 18.1421 23.5493 17.5738L32 9.00013L29.9718 6.94244L21.5212 15.5161Z"
+                />
+                <path
+                  d="M29.9719 11.0576L32 9.00013L23.5494 0.426161C22.9893 -0.142054 22.0813 -0.142053 21.5212 0.426162C20.9612 0.994377 20.9612 1.91564 21.5212 2.48385L29.9719 11.0576Z"
+                />
+                <path
+                  d="M0 8.99997C0 8.11607 0.706255 7.39953 1.57747 7.39953H26.8169C27.6882 7.39953 28.3944 8.11607 28.3944 8.99997C28.3944 9.88387 27.6882 10.6004 26.8169 10.6004H1.57747C0.706255 10.6004 0 9.88387 0 8.99997Z"
+                />
+              </svg>
+            </button>
+          </div>
+          <div id="block_about" class="main-block main-block--about-platform">
+            <img
+              class="eclipse block-about__eclipse-1"
+              src="./images/block_about-eclipse-1.png"
+              alt="block_about-eclipse"
+            />
+            <img
+              class="eclipse block-about__eclipse-2"
+              src="./images/block_about-eclipse-2.png"
+              alt="block_about-eclipse"
+            />
+            <h2 class="heading">
+              <span class="text-gradient">О платформе</span>
+            </h2>
+            <p class="sub-heading">
+              ЭИОС InStudy – кросс-платформенная LMS-система с широким набором
+              встроенных инструментов .
+            </p>
+
+            <div class="block-about__tools-list block-about__slider">
+              <div class="block-about__slide">
+                <div class="list-item">
+                  <div class="list-item__tab">
+                    <h4 class="list-item__title">Конструктор курсов</h4>
+                    <p class="list-item__text">
+                      создание и упаковка учебных материалов без дополнительных
+                      навыков
+                    </p>
+                  </div>
+                </div>
+                <div class="list-item">
+                  <div class="list-item__tab">
+                    <h4 class="list-item__title">Мультимедийный контент</h4>
+                    <p class="list-item__text">
+                      поддержка популярных форматов курсов — SCORM, XAPI, HTML
+                    </p>
+                  </div>
+                </div>
+                <div class="list-item">
+                  <div class="list-item__tab">
+                    <h4 class="list-item__title">Контроль успеваемости</h4>
+                    <p class="list-item__text">
+                      уведомления, сроки сдачи, активность и результаты обучения
+                    </p>
+                  </div>
+                </div>
+                <div class="list-item">
+                  <div class="list-item__tab">
+                    <h4 class="list-item__title">Cреда коммуникации</h4>
+                    <p class="list-item__text">
+                      мессенджер для общения студента, преподавателя и куратора
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="block-about__slide">
+                <div class="list-item">
+                  <div class="list-item__tab">
+                    <h4 class="list-item__title">Автоматизация обучения</h4>
+                    <p class="list-item__text">
+                      электронная зачетная книжка, автоматическое расписание
+                    </p>
+                  </div>
+                </div>
+                <div class="list-item">
+                  <div class="list-item__tab">
+                    <h4 class="list-item__title">Электронные услуги</h4>
+                    <p class="list-item__text">
+                      мгновенное формирование документов, заказ справок,
+                      электронный деканат
+                    </p>
+                  </div>
+                </div>
+                <div class="list-item">
+                  <div class="list-item__tab">
+                    <h4 class="list-item__title">Онлайн-аттестация</h4>
+                    <p class="list-item__text">
+                      зачёты и экзамены с прокторингом, задания с автоматической
+                      проверкой
+                    </p>
+                  </div>
+                </div>
+                <div class="list-item">
+                  <div class="list-item__tab">
+                    <h4 class="list-item__title">Оплата в один клик</h4>
+                    <p class="list-item__text">
+                      интеграция с платежными системами, эквайринг
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="block-about__video-section">
+              <div id="video-wrp" class="video-section__video-wrp">
+                <video
+                  id="video-player"
+                  class="video-section__video"
+                  src="./video/video-instudy.mp4"
+                ></video>
+                <button
+                  id="video-play-btn"
+                  class="video-section__btn-play video-section__btn-play--active"
+                >
+                  <svg
+                    class="btn-play__svg"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"
+                  >
+                    <path
+                      d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+              <div class="video-section__text-wrp">
+                <div class="inverted-commas__wrp">
+                  <img
+                    class="inverted-commas"
+                    src="./images/inverted-commas 1.png"
+                    alt="inverted-commas"
+                  />
+                </div>
+                <p class="video-section__text">
+                  Использование лучших практик классического образования и
+                  возможностей онлайн-технологий позволяет преподавателю
+                  становится ментором, наставником, а каждому студенту —
+                  активным участником, исследователем, формировать свой
+                  образовательный запрос.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="main-block main-block--who">
+            <img
+              class="block-who__img"
+              src="./images/block_who_img.png"
+              alt="block_who_img"
+            />
+            <img
+              class="block-who__img--mobile"
+              src="./images/block_who_img--mobile.png"
+              alt="block_who_img"
+            />
+            <h2 class="heading">
+              <span class="text-gradient">Кому подойдет</span>
+              <span class="text-gradient">платформа</span>
+            </h2>
+            <p class="sub-heading">
+              ЭИОС InStudy обладает широким функционалом и позволяет не только
+              автоматизировать образовательный процесс, независимо от формата
+              обучения, но и проводить комплексную оценку компетенций и
+              мотивации с целью построения персонализированных образовательных
+              траекторий.
+            </p>
+            <h3 class="block-who__shere text-gradient">
+              Сферы применения платформы:
+            </h3>
+            <ul class="block__list">
+              <li class="list-item">Высшее образование</li>
+              <li class="list-item">Среднее профессиональное образование</li>
+              <li class="list-item">Дополнительное образование</li>
+              <li class="list-item">Онлайн-школы</li>
+            </ul>
+          </div>
+          <div id="block_partners" class="main-block main-block--partners">
+            <h2 class="heading">
+              <span class="text-gradient">Партнеры</span>
+            </h2>
+            <p class="sub-heading">
+              ЭИОС InStudy активно внедрена и используется в 7 образовательных
+              организациях по всей России.
+            </p>
+            <div class="block-partners__logo-list block-partners__slider">
+              <div class="logo-list__row">
+                <div class="list__item-wrp">
+                  <img
+                    class="list__item"
+                    src="./images/partner_7.svg"
+                    alt="partner_7"
+                  />
+                </div>
+
+                <div class="list__item-wrp">
+                  <img
+                    class="list__item"
+                    src="./images/partner_3.svg"
+                    alt="partner_3"
+                  />
+                </div>
+
+                <div class="list__item-wrp">
+                  <img
+                    class="list__item"
+                    src="./images/partner_2.svg"
+                    alt="partner_2"
+                  />
+                </div>
+
+                <div class="list__item-wrp">
+                  <img
+                    class="list__item"
+                    src="./images/partner_1.svg"
+                    alt="partner_1"
+                  />
+                </div>
+              </div>
+              <div class="logo-list__row">
+                <div class="list__item-wrp">
+                  <img
+                    class="list__item"
+                    src="./images/partner_6.svg"
+                    alt="partner_6"
+                  />
+                </div>
+
+                <div class="list__item-wrp">
+                  <img
+                    class="list__item"
+                    src="./images/partner_5.svg"
+                    alt="partner_5"
+                  />
+                </div>
+
+                <div class="list__item-wrp">
+                  <img
+                    class="list__item"
+                    src="./images/partner_4.svg"
+                    alt="partner_4"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            id="block_award-winner"
+            class="main-block main-block--award-winner"
+          >
+            <img
+              class="eclipse block-award__eclipse-1"
+              src="./images/block_awward-eclipse-1.png"
+              alt="block_awward-eclipse"
+            />
+            <img
+              class="eclipse block-award__eclipse-2"
+              src="./images/block_awward-eclipse-2.png"
+              alt="block_awward-eclipse"
+            />
+            <img
+              class="eclipse block-award__eclipse-3"
+              src="./images/block_awward-eclipse-3.png"
+              alt="block_awward-eclipse"
+            />
+            <div class="block-award__img-wrp">
+              <img
+                id="present-img"
+                class="block-award__img"
+                src="./images/present.svg"
+                alt="present"
+              />
+            </div>
+            <h2 class="heading">
+              <span class="text-gradient">Лауреат премии </span>
+              <span class="text-gradient">«Цифровые Вершины 2020» </span>
+            </h2>
+            <p class="sub-heading">
+              Образовательная платформа InStudy стала лауреатом премии «Цифровые
+              вершины 2020» в номинации «Лучшее решение для дистанционного
+              обучения». В этой номинации были представлены такие крупные
+              проекты как «Вышка.Digital. Цифровой университет», «Учи.ру»,
+              «ЯКласс» и «Modeus».
+            </p>
+            <div class="block-award__wrp">
+              <div class="inverted-commas__wrp">
+                <img
+                  class="inverted-commas"
+                  src="./images/inverted-commas 1.png"
+                  alt="inverted-commas"
+                />
+              </div>
+              <p class="block-award__text">
+                Современная платформа - это не только гибкое построение
+                образовательного процесса, но и возможность формирования
+                индивидуальных треков обучения и построения цифрового профиля за
+                счёт использования анализа данных.
+              </p>
+            </div>
+            <div class="block-award__result-list">
+              <div class="list-item">
+                <p class="item__total">49 000</p>
+                <span class="item__text">пользователей</span>
+                <img
+                  class="item__icon"
+                  src="./images/people.png"
+                  alt="people"
+                />
+              </div>
+              <div class="list-item">
+                <p class="item__total">2 500</p>
+                <span class="item__text">часов контента</span>
+                <img class="item__icon" src="./images/time.png" alt="time" />
+              </div>
+              <div class="list-item">
+                <p class="item__total">2 000</p>
+                <span class="item__text">учебных курсов </span>
+                <img
+                  class="item__icon"
+                  src="./images/mortarboard.png"
+                  alt="mortarboard"
+                />
+              </div>
+              <div class="list-item">
+                <p class="item__total">500</p>
+                <span class="item__text">преподавателей</span>
+                <img
+                  class="item__icon"
+                  src="./images/teacher.png"
+                  alt="teacher"
+                />
+              </div>
+              <div class="list-item">
+                <p class="item__total">7</p>
+                <span class="item__text">лицензиатов</span>
+                <img class="item__icon" src="./images/copy.png" alt="copy" />
+              </div>
+            </div>
+          </div>
+          <div id="block_effect" class="main-block main-block--effect">
+            <h2 class="heading">
+              <span class="text-gradient">Эффект от </span>
+              <span class="text-gradient">внедрения InStudy </span>
+            </h2>
+            <p class="block-effect__sub text-gradient">
+              Для образовательной организации
+            </p>
+            <div class="block-effect__slider-1">
+              <div class="slide-tab">
+                <img src="./images/virus.png" alt="virus" />
+                <p class="slide-tab__text">
+                  Гибкая адаптация образовательной программы в условиях
+                  изменения эпидемиологической ситуации
+                </p>
+              </div>
+              <div class="slide-tab">
+                <img src="./images/speedometer.png" alt="speedometer" />
+                <p class="slide-tab__text">
+                  Объективная оценка эффективности обучения и достижения
+                  заявленных результатов
+                </p>
+              </div>
+              <div class="slide-tab">
+                <img src="./images/reading-book.png" alt="reading-book" />
+                <p class="slide-tab__text">
+                  Повышение вовлеченности и результативности обучения
+                </p>
+              </div>
+              <div class="slide-tab">
+                <img src="./images/learning.png" alt="learning" />
+                <p class="slide-tab__text">
+                  Расширение образовательных мощностей
+                </p>
+              </div>
+              <div class="slide-tab">
+                <img src="./images/percent.png" alt="percent" />
+                <p class="slide-tab__text">
+                  Снижение затрат <br />
+                  на обучение
+                </p>
+              </div>
+            </div>
+            <p class="block-effect__sub text-gradient">Для обучающихся</p>
+            <div class="slider-2__wrp">
+              <div class="block-effect__slider-2">
+                <div class="slide-tab">
+                  <img src="./images/brainstorming.png" alt="brainstorming" />
+                  <p class="slide-tab__text">
+                    Решение индивидуальных, профессиональных и образовательных
+                    задач
+                  </p>
+                </div>
+                <div class="slide-tab">
+                  <img src="./images/computer.png" alt="computer" />
+                  <p class="slide-tab__text">
+                    Эффективное обучение - максимум знаний и навыков в единицу
+                    времени
+                  </p>
+                </div>
+                <div class="slide-tab">
+                  <img
+                    src="./images/social-distancing.png"
+                    alt="social-distancing"
+                  />
+                  <p class="slide-tab__text">
+                    Удобная коммуникация с одногруппниками, педагогом и
+                    куратором
+                  </p>
+                </div>
+                <div class="slide-tab">
+                  <img src="./images/read.png" alt="read" />
+                  <p class="slide-tab__text">
+                    Контроль обучения <br />
+                    и мотивации студентов
+                  </p>
+                </div>
+                <div class="slide-tab">
+                  <img
+                    src="./images/artificial-intelligence 1.png"
+                    alt="artificial-intelligence"
+                  />
+                  <p class="slide-tab__text">
+                    Формирование цифрового профиля компетенций
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-block main-block--integration">
+            <img
+              class="block-integration__img"
+              src="./images/block_effect-img.png"
+              alt="block_effect-img"
+            />
+            <img
+              class="block-integration__img--mobile"
+              src="./images/block_effect-img--mobile.png"
+              alt="block_effect-img"
+            />
+            <h2 class="heading">
+              <span class="text-gradient">Гибкая интеграция </span>
+            </h2>
+            <p class="sub-heading">
+              <span class="text-gradient"
+                >InStudy — российское решение с гибкими
+              </span>
+              <span class="text-gradient">
+                интеграционными возможностями, соответствующее
+              </span>
+              <span class="text-gradient">
+                требованиям реестра российского ПО:
+              </span>
+            </p>
+            <ul class="block__list">
+              <li class="list-item">Система оплаты (эквайринг)</li>
+              <li class="list-item">Электронные библиотечные системы</li>
+              <li class="list-item">Система прокторинга</li>
+              <li class="list-item">
+                Системы онлайн-конференций и вебинаров (Вебинар.ру, Zoom)
+              </li>
+              <li class="list-item">
+                Система биометрической идентификации личности
+              </li>
+              <li class="list-item">Системы электронного документооборота</li>
+              <li class="list-item">
+                Линейка продуктов 1С: Университет, Университет Проф, Колледж,
+                Автоматическое составление расписания)
+              </li>
+            </ul>
+          </div>
+          <div id="block-form" class="main-block main-block--form">
+            <img
+              class="eclipse block-form__eclipse-1"
+              src="./images/block_form-eclipse-1.png"
+              alt="eclipse"
+            />
+            <img
+              class="eclipse block-form__eclipse-2"
+              src="./images/block_form-eclipse-2.png"
+              alt="eclipse"
+            />
+            <img
+              class="eclipse block-form__eclipse-3"
+              src="./images/block_form-eclipse-3.png"
+              alt="eclipse"
+            />
+            <div class="block-form_form">
+              <p class="text-gradient">Заказать демонстрацию</p>
+              <input
+                class="form_input"
+                id="input-name"
+                type="text"
+                placeholder="ФИО*"
+              />
+              <input
+                class="form_input"
+                id="input-organization"
+                type="text"
+                placeholder="Организация"
+              />
+              <input
+                required
+                class="form_input"
+                id="input-phone"
+                type="phone"
+                placeholder="Телефон*"
+              />
+              <div class="form__input-wrp">
+                <input
+                  id="input-email"
+                  class="form_input"
+                  type="email"
+                  placeholder="Почта
+                "
+                />
+                <button class="form__submit-btn">
+                  <img src="./images/arrow.svg" alt="arrow" />
+                </button>
+                <span id="form__notify" class="form__notify"
+                  >Форма успешно отправлена</span
+                >
+              </div>
+            </div>
+          </div>
+        </main>
+        <footer class="footer">
+          <img class="footer__logo" src="./images/logo.svg" alt="logo" />
+          <h3 class="footer__title footer__title--contacts text-upercase">
+            Контакты
+          </h3>
+          <h3
+            class="footer__title footer__title--menu text-upercase justyfy-center"
+          >
+            МЕНЮ
+          </h3>
+          <div class="footer__col footer__col--1">
+            <p class="footer__text text-upercase">
+              НОЧУ ВО «Московский институт психоанализа»
+            </p>
+            <span class="footer__text text-upercase">ИНН: 7713131464</span>
+            <span class="footer__text text-upercase">КПП: 773001001</span>
+            <p class="footer__text text-upercase">
+              121170, Россия, г. Москва, Кутузовский проспект, д. 34, стр. 14
+            </p>
+            <span class="footer__text"
+              >сайт:
+              <a
+                class="footer__text footer__text--link"
+                href="https://inpsycho.ru/"
+                >www.inpsycho.ru</a
+              ></span
+            >
+            <span class="footer__text footer__text--last"
+              >тел.: +7 (495) 933 26 83 +7 (495) 782 34 43</span
+            >
+          </div>
+          <div class="footer__col footer__col--2">
+            <p class="footer__text text-upercase">
+              ООО «Современное образование 3»
+            </p>
+            <span class="footer__text text-upercase">ИНН: 7725590046</span>
+            <span class="footer__text text-upercase">КПП: 772301001 </span>
+            <p class="footer__text text-upercase">
+              109390, г. Москва, ул. Артюхиной, д. 6, корп. 1, подвал пом. I,
+              ком. 8А
+            </p>
+          </div>
+          <div class="footer__col footer__col--3">
+            <p class="footer__text">
+              По любым вопросам, касательно платформы, пишите на почту:
+              <span
+                id="mail-open"
+                data-href="mailto:support@instudy.online"
+                class="footer__text footer__text--link"
+                >support@instudy.online
+              </span>
+            </p>
+          </div>
+          <div class="footer__col footer__col--4">
+            <span
+              data-block="#block_about"
+              class="footer__text text-upercase footer__text--menu-item"
+              >О платформе</span
+            >
+            <span
+              data-block="#block_partners"
+              class="footer__text text-upercase footer__text--menu-item"
+              >Партнеры</span
+            >
+            <span
+              data-block="#block_award-winner"
+              class="footer__text text-upercase footer__text--menu-item"
+              >Премия</span
+            >
+            <span
+              data-block="#block_effect"
+              class="footer__text text-upercase footer__text--menu-item"
+              >Эффект</span
+            >
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
