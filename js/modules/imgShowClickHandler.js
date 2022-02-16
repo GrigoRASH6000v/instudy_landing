@@ -35,7 +35,7 @@ const modalDom = {
           type: 'img',
           classes: ['content__img'],
           attrs: [
-            { name: 'src', value: './images/present.svg' },
+            { name: 'src', value: './images/present.png' },
             { name: 'alt', value: 'present' },
           ],
         },

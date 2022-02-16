@@ -189,7 +189,7 @@
     .list-item {
       width: 100%;
       height: 100%;
-      max-width: 26.1rem;
+      max-width: 28rem;
       max-height: 27.8rem;
     }
     .list-item__tab {
@@ -229,6 +229,14 @@
       row-gap: 2.8rem;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .main-block--about-platform {
+    .list-item__title {
+      font-size: 2.5rem;
     }
   }
 }

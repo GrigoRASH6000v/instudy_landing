@@ -25,6 +25,8 @@
     bottom: 9rem;
   }
   .block-award__img-wrp {
+    width: 39.9rem;
+    height: 55.9rem;
     grid-area: img;
     right: 6%;
     top: -0.5%;
@@ -34,17 +36,14 @@
   .block-award__img {
     cursor: pointer;
     transition-duration: 0.5s;
-    height: 55.9rem;
+    height: 100%;
     border: 1px solid transparent;
     padding: 3rem 3rem 3.5rem 3rem;
-    width: 39.9rem;
-
+    width: 100%;
     border-radius: 2rem;
     background-color: rgba($color: $black, $alpha: 0.65);
-
     margin-right: 0;
     margin-top: 0;
-
     &:hover {
       border-color: $white;
     }
@@ -160,6 +159,7 @@
 
 @include breakPoints(xs) {
   .main-block--award-winner {
+    grid-template-columns: 1fr;
     padding-bottom: 10rem;
     justify-items: center;
     grid-template-areas:
@@ -185,16 +185,18 @@
       font-size: 3.5rem;
     }
     .block-award__img-wrp {
-      left: 1.5rem;
+      justify-self: center;
+      right: auto;
       margin-bottom: 8rem;
-
+      width: 33rem;
+      height: 47rem;
       &::before {
-        width: calc(100% + 0.2rem);
-        height: calc(100% + 0.2rem);
+        width: calc(100% + 0.1rem);
+        height: calc(100% + 0.1rem);
         content: '';
         position: absolute;
-        right: -0.1rem;
-        bottom: -0.1rem;
+        right: 0;
+        bottom: 0;
         z-index: 1;
         border-radius: 2rem;
         background: linear-gradient(to right, #321daa, #ead4c5);
@@ -203,10 +205,8 @@
     .block-award__img {
       position: relative;
       justify-self: center;
-      max-width: 33rem;
       top: auto;
       bottom: auto;
-      height: 47rem;
       right: auto;
       z-index: 4;
       background-color: $black;

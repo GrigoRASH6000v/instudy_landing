@@ -48,13 +48,18 @@
     font-size: 1.4rem;
     color: $grey;
     line-height: 1.7rem;
+    a {
+      text-decoration: none;
+      font-size: inherit;
+      color: inherit;
+    }
   }
   &__text--last {
     max-width: 14.8rem;
     text-align: right;
   }
   &__text--link {
-    text-decoration: underline;
+    text-decoration: underline !important;
     cursor: pointer;
     transition-duration: 0.3s;
     color: $white;
@@ -109,9 +114,6 @@
     }
     &__text--last {
       max-width: 21.1rem;
-    }
-    .text-upercase {
-      text-transform: none;
     }
   }
 }
